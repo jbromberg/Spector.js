@@ -42,7 +42,7 @@ export class XRSpy {
         }
 
         (window as any).XRWebGLLayer = XRWebGLLayerSpector;
-        (window as any).XRWebGLBinding = XRWebGLBindingSpector;
+        // (window as any).XRWebGLBinding = XRWebGLBindingSpector;
 
         // polyfill request session so Spector gets access to the session object.
         const existingRequestSession = navigator.xr.requestSession;

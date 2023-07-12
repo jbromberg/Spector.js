@@ -116,7 +116,7 @@ export class Spector {
         // if we want to capture WebXR sessions, we have to polyfill a bunch of stuff to ensure Spector.JS has access to the session
         // and the GL context. So we do that here.
         if (this.options.enableXRCapture) {
-            this.xrSpy = new XRSpy(this.timeSpy);
+            // this.xrSpy = new XRSpy(this.timeSpy);
         }
     }
 
